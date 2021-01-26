@@ -1,5 +1,4 @@
 ### Hi, I am Nagalakshmi Palyam 👋
-![](Mygitprofile/github-linkedin.png)
 
 - 🔭 I am An Aspiring Android developer who is passionate about making an innovative android appliactions.
   

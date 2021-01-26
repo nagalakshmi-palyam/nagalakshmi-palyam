@@ -2,7 +2,7 @@
 
 - 🔭 I am An Aspiring Android developer who is passionate about making an innovative android appliactions.
  * Tech Stacks :
-   Java | Kotlin | C
+   * Java | Kotlin | C
   
   ![androiddeveloper](https://user-images.githubusercontent.com/68853216/105863796-47337100-6017-11eb-839b-cad86826b144.gif)
 

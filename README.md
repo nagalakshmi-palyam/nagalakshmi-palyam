@@ -8,7 +8,7 @@
 - 📫 How to reach me:
      * Linkedin[www.linkedin.com/in/nagalakshmi-palyam-38a0561b7]
      * nagalakshmi.palyam@gmail.com
-     *+91 9989831215
+     * 9989831215
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->

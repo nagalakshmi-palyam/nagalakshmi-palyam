@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.StartFragment">
+
+    <TextView
+        android:textSize="30sp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Start Game"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/etgame"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:hint="Enter Game"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_gravity="center_horizontal|bottom"
+        android:id="@+id/btnstart"
+        android:text="Start game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

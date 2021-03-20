@@ -1,0 +1,91 @@
+1604202392998	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1604205992999	Sync.Service	DEBUG	User-Agent: Firefox/82.0 (Linux x86_64) FxSync/1.84.0.20201014125134.desktop
+1604205993000	Sync.Service	INFO	Starting sync at 2020-11-01 10:16:32 in browser session BxSttLOEPM43
+1604205993000	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1604205993009	Sync.Status	INFO	Resetting Status.
+1604205993010	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1604205993012	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1604205993012	FirefoxAccounts	DEBUG	getOAuthToken enter
+1604205993014	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1604205993014	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1604205993014	Sync.BrowserIDManager	INFO	Getting keys
+1604205993016	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1604205993019	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1604205993020	Sync.BrowserIDManager	DEBUG	Getting a token using OAuth
+1604205993020	FirefoxAccounts	DEBUG	getAccessToken enter
+1604205993020	FirefoxAccounts	DEBUG	getOAuthToken enter
+1604205993021	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1604205993021	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1604205993021	FirefoxAccounts	DEBUG	Using cached scopedKeys data for https://identity.mozilla.com/apps/oldsync
+1604205993022	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1604205993023	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1604205993950	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1604205993966	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 200
+1604205993966	Services.Common.TokenServerClient	DEBUG	Got token response: 200
+1604205993967	Services.Common.TokenServerClient	DEBUG	Successful token response
+1604205993967	Sync.Status	DEBUG	Status.login: success.login => success.login
+1604205993967	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1604205993969	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1604205993973	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1604205994451	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/174286250/info/collections
+1604205994452	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/174286250/info/configuration
+1604205994453	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1604205994757	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/174286250/info/configuration
+1604205994758	Sync.Service	DEBUG	Fetching global metadata record
+1604205994758	Sync.Service	DEBUG	Weave Version: 1.84.0 Local Storage: 5 Remote Storage: 5
+1604205994758	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1604205994758	Sync.Service	INFO	Testing info/collections: {"forms":1604161093.34,"history":1604161093.91,"crypto":1603976063.06,"meta":1603976090.19,"passwords":1603976067.99,"clients":1604202389.72,"tabs":1604202390.4,"prefs":1603976067.15,"bookmarks":1603976070.75}
+1604205994759	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1603976063.06
+1604205994759	Sync.Synchronizer	DEBUG	Refreshing client list.
+1604205994761	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1604205994761	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1604205994765	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1604205995679	Sync.Collection	DEBUG	GET fail 503 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/174286250/storage/clients?full=1&limit=1000
+1604205995679	Sync.Collection	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/174286250/storage/clients?full=1&limit=1000 failed with status 503
+1604205995681	Sync.ErrorHandler	DEBUG	Got Retry-After: 3600
+1604205995681	Sync.Status	DEBUG	Status.sync: success.sync => error.sync.reason.serverMaintenance
+1604205995681	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1604205995682	Sync.SyncScheduler	DEBUG	Got backoff notification: 3600000ms
+1604205995682	Sync.SyncScheduler	DEBUG	Fuzzed minimum next sync: 1604209595682
+1604205995682	Sync.Status	DEBUG	Status for engine clients: error.engine.reason.record_download_fail
+1604205995682	Sync.Status	DEBUG	Status.service: error.sync.failed => error.sync.failed_partial
+1604205995683	Sync.Collection	WARN	Got exception parsing response body: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data(resource://services-sync/resource.js:229:21) JS Stack trace: _processResponse/<@resource.js:229:21
+get@XPCOMUtils.jsm:58:51
+format@Log.jsm:642:19
+formatText@Log.jsm:571:44
+format@Log.jsm:589:12
+append@Log.jsm:682:37
+append@logmanager.js:156:44
+log@Log.jsm:379:16
+debug@Log.jsm:399:10
+observe@policies.js:899:21
+observe@observers.js:135:21
+notify@observers.js:87:18
+notify@util.js:204:19
+WrappedNotify@util.js:214:17
+1604205995684	Sync.Collection	DEBUG	Parse fail: Response body starts: <html>
+<head><title>503 Service Unavailable</title></head>
+<body bgcolor="white">
+<center><h1>503 Se
+1604205995682	Sync.ErrorHandler	DEBUG	clients failed: ({data:"<html>\n<head><title>503 Service Unavailable</title></head>\n<body bgcolor=\"white\">\n<center><h1>503 Service Cloudy: Try again later. </h1></center>\n</body>\n</html>\n", url:"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/174286250/storage/clients?full=1&limit=1000", status:503, success:false, headers:{'alt-svc':"clear", 'content-length':"162", 'content-type':"text/html", date:"Sun, 01 Nov 2020 04:46:35 GMT", etag:"\"5f9dfe7c-a2\"", 'retry-after':"3600", server:"openresty/1.15.8.2", via:"1.1 google", 'x-firefox-spdy':"h2"}, get obj() {
+        if (!redefining) {
+          // Make sure we don't get into an infinite recursion loop if
+          // the getter lambda does something shady.
+          redefining = true;
+          return redefine(aObject, aName, aLambda.apply(aObject));
+        }
+      }, failureCode:"error.engine.reason.record_download_fail"})
+1604205995686	Sync.Synchronizer	INFO	Updating enabled engines: 1 clients.
+1604205995690	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1604205995691	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1604205995694	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1604205995697	Sync.Synchronizer	INFO	Aborting sync for failure in prefs
+1604205995697	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1604205995699	Sync.Synchronizer	INFO	Sync completed at 2020-11-01 10:16:35 after 2.69 secs.
+1604205995700	Sync.Declined	DEBUG	Handling remote declined: []
+1604205995700	Sync.Declined	DEBUG	Handling local declined: []
+1604205995700	Sync.Declined	DEBUG	Declined changed? false
+1604205995701	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1604205995701	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+1604205995702	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 3713539.4307091557 ms.
+1604205995702	Sync.SyncScheduler	DEBUG	Next sync in 3713539.4307091557 ms. (why=client-backoff-schedule)

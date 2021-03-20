@@ -1,0 +1,79 @@
+1604243247047	FirefoxAccounts	DEBUG	FxAccountsWebChannel registered: account_updates with origin https://accounts.firefox.com
+1604243247099	FirefoxAccounts	TRACE	initializing new storage manager
+1604243247099	FirefoxAccounts	TRACE	starting fetch of json user data
+1604243247283	FirefoxAccounts	TRACE	finished fetch of json user data - took: 183
+1604243247283	FirefoxAccounts	DEBUG	reading secure storage with existing: []
+1604243247283	FirefoxAccounts	TRACE	starting fetch of user data from the login manager
+1604243247326	FirefoxAccounts	DEBUG	secure read fetched items: ["kSync","kXCS","kExtSync","kExtKbHash","scopedKeys"]
+1604243247326	FirefoxAccounts	TRACE	initializing of new storage manager done
+1604243247458	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Initialized
+1604243247459	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1604243247459	FirefoxAccounts	DEBUG	getOAuthToken enter
+1604243247460	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1604243247460	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1604243247849	FirefoxAccounts	INFO	fetching updated device list
+1604243247853	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1604243248135	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/devices
+1604243254137	Sync.Status	INFO	Resetting Status.
+1604243254137	Sync.Status	DEBUG	Status.service: undefined => success.status_ok
+1604243254270	Sync.SyncScheduler	TRACE	Setting SyncScheduler policy values to defaults.
+1604243254271	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1604243254273	Sync.Service	INFO	Loading Weave 1.84.0
+1604243254274	Sync.Engine.Clients	DEBUG	Engine constructed
+1604243254275	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1604243254324	Sync.Engine.Addons	DEBUG	Engine constructed
+1604243254628	Sync.Engine.Addons	DEBUG	SyncEngine initialized: addons
+1604243254788	Sync.Engine.Forms	DEBUG	Engine constructed
+1604243254996	Sync.Engine.Forms	DEBUG	SyncEngine initialized: forms
+1604243255003	Sync.Engine.History	DEBUG	Engine constructed
+1604243255053	Sync.Engine.History	DEBUG	SyncEngine initialized: history
+1604243255060	Sync.Engine.Passwords	DEBUG	Engine constructed
+1604243255123	Sync.Engine.Passwords	DEBUG	SyncEngine initialized: passwords
+1604243255129	Sync.Engine.Prefs	DEBUG	Engine constructed
+1604243255139	Sync.Engine.Prefs	DEBUG	SyncEngine initialized: prefs
+1604243255145	Sync.Engine.Tabs	DEBUG	Engine constructed
+1604243255167	Sync.Engine.Tabs	DEBUG	SyncEngine initialized: tabs
+1604243255168	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1604243255197	Sync.Engine.CreditCards	DEBUG	Engine constructed
+1604243255214	Sync.Engine.CreditCards	DEBUG	SyncEngine initialized: creditcards
+1604243255228	Sync.Engine.Bookmarks	DEBUG	Engine constructed
+1604243255246	Sync.Engine.Bookmarks	DEBUG	SyncEngine initialized: bookmarks
+1604243255278	Sync.Engine.Extension-Storage	DEBUG	Engine constructed
+1604243255315	Sync.Engine.Extension-Storage	DEBUG	SyncEngine initialized: extension-storage
+1604243255316	Sync.Service	INFO	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0
+1604243255319	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1604243255319	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1604243255320	Sync.Engine.History.Tracker	INFO	Adding Places observer.
+1604243255332	FirefoxAccounts	INFO	Already fetching device list, return existing promise
+1604243255332	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1604243261339	Sync.Service	DEBUG	User-Agent: Firefox/82.0 (Linux x86_64) FxSync/1.84.0.20201014125134.desktop
+1604243261340	Sync.Service	INFO	Starting sync at 2020-11-01 20:37:41 in browser session AJX-1v-W7fCw
+1604243261340	Sync.Service	DEBUG	In sync: should login.
+1604243261341	Sync.Service	INFO	User logged in successfully - verifying login.
+1604243261342	Sync.BrowserIDManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1604243261342	Sync.Status	DEBUG	Status.login: success.login => success.status_ok
+1604243261342	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1604243261342	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1604243261343	Sync.BrowserIDManager	INFO	Getting keys
+1604243261343	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1604243261343	Sync.BrowserIDManager	DEBUG	Getting a token using OAuth
+1604243261343	FirefoxAccounts	DEBUG	getAccessToken enter
+1604243261344	FirefoxAccounts	DEBUG	getOAuthToken enter
+1604243261344	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1604243261344	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1604243261344	FirefoxAccounts	DEBUG	Using cached scopedKeys data for https://identity.mozilla.com/apps/oldsync
+1604243261344	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1604243261345	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1604243304181	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1604243304182	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: TypeError: err.response is undefined(resource://services-sync/browserid_identity.js:508:13) JS Stack trace: _fetchTokenUsingOAuth/<@browserid_identity.js:508:13
+1604243304182	Sync.Status	DEBUG	Status.login: success.status_ok => error.login.reason.network
+1604243304182	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1604243304184	Sync.BrowserIDManager	INFO	Failed to fetch the cluster URL: TypeError: err.response is undefined(resource://services-sync/browserid_identity.js:508:13) JS Stack trace: _fetchTokenUsingOAuth/<@browserid_identity.js:508:13
+1604243304184	Sync.Service	DEBUG	verifyLogin failed: TypeError: err.response is undefined(resource://services-sync/browserid_identity.js:508:13) JS Stack trace: _fetchTokenUsingOAuth/<@browserid_identity.js:508:13
+1604243304185	Sync.Status	DEBUG	Status.login: error.login.reason.network => error.login.reason.network
+1604243304185	Sync.Status	DEBUG	Status.service: error.login.failed => error.login.failed
+1604243304185	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1604243304186	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1604243304187	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1604243304190	Sync.Service	DEBUG	Exception calling WrappedLock: Error: Login failed: error.login.reason.network(resource://services-sync/service.js:1043:15) JS Stack trace: onNotify@service.js:1043:15
+1604243304191	Sync.Service	DEBUG	Not syncing: login returned false.

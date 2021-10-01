@@ -2,7 +2,7 @@
 
 ####  🔭 An Aspiring Mobile/Web application developer who is passionate about making an innovative Mobile/Web appliactions.
 * Tech Stacks :
-   * Java | Kotlin | Android | Dagger2 | Databinding | C
+   * Dart | Flutter | Java | Kotlin | Android | Dagger2 | Databinding | C
   
   ![androiddeveloper](https://user-images.githubusercontent.com/68853216/105863796-47337100-6017-11eb-839b-cad86826b144.gif)
 

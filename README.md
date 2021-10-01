@@ -1,6 +1,6 @@
 #### Hi, I am Nagalakshmi Palyam 👋
 
-####  🔭 An Aspiring Android developer who is passionate about making an innovative android appliactions.
+####  🔭 An Aspiring Mobile/Web application developer who is passionate about making an innovative Mobile/Web appliactions.
 * Tech Stacks :
    * Java | Kotlin | Android | Dagger2 | Databinding | C
   
